@@ -13,14 +13,14 @@ In summary, Oahu could be a good place to running a surf shop and also sell Ice 
 There is a good chance to have lot of days with ideal temperature for surfing and enjoying the vacation in Oahu.
 Also I can offer two more study as below to make sure our conclusion is more reliable:
 1-	Check the precipitation for June
----
+```
 dec_prcp = []
 dec_prcp = session.query(Measurement.prcp).\
     filter(extract('month',Measurement.date) == 6).all()
----
+```
 2-	Check the precipitation for December
----
+```
 dec_prcp = []
 dec_prcp = session.query(Measurement.prcp).\
     filter(extract('month',Measurement.date) == 12).all()
----
+```
